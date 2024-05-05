@@ -1,0 +1,42 @@
+// To implement custom headers
+// Since new WebSocket does not support headers
+// First make a fetch request to a separate endpoint before upgrading the connect only if the status is 200
+
+// Perform an initial HTTP request with custom headers for authentication
+fetch('http://localhost:8080/authenticate', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_TOKEN_HERE',
+    // Add other custom headers as needed
+  }
+})
+.then(response => {
+  if (response.status === 200) {
+    // Authentication successful, manually upgrade to WebSocket
+    const socket = new WebSocket('ws://localhost:8080/ws');
+
+      		// const socket = new WebSocket("ws://localhost:8080/ws");
+
+		socket.addEventListener("open", function () {
+			console.log("Connected to WebSocket server");
+			socket.send("Hello from client!");
+		});
+
+		socket.addEventListener("message", function (event) {
+			// console.log("Message from server: ", event.data);
+			console.log("Message from server: ", JSON.parse(event.data));
+		});
+
+		socket.addEventListener("close", function (e) {
+			console.log("WebSocket connection closed");
+		});
+    
+    // WebSocket event listeners...
+  } else {
+    console.error('Authentication failed');
+  }
+})
+.catch(error => {
+  console.error('Error during authentication:', error);
+});
+ 
