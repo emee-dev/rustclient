@@ -1,0 +1,96 @@
+  [file]
+  name= "get all users"
+  type= "http"
+  sequence= 1
+ 
+  [meta]
+  url= "https://echo.free.beeceptor.com"
+  method= "post"
+ 
+  [headers]
+  Accept= "application/json"
+  Content-Type= "application/json"
+
+# Basic Auth
+  [auth.basic]
+  username= ""
+  password= ""
+
+# Bearer token
+  [auth.bearer]
+  token= ""
+ 
+# Digest auth 
+  [auth.digest]
+  username= ""
+  password= ""
+
+# Aws Sig v4
+  [auth.awsv4]
+  accessKeyId= "AWS_ACCESS_KEY_ID"
+  secretAccessKey= "AWS_SECRET_ACCESS_KEY"
+  sessionToken= "AWS_SESSION_TOKEN"
+  service= "AWS_SERVICE"
+  region= "AWS_REGION"
+  profileName= "AWS_PROFILE"
+
+# OAuth 2.0
+  [auth.oauth2]
+# Depending on the grant_type the field changes, grant_type is dynamic
+# grant_type = ["authorization_code", "password", "client_credentials"]
+  grant_type= "authorization_code" 
+  callback_url= "callback"
+  authorization_url= "authori"
+  access_token_url= "access"
+  client_id= "id"
+  client_secret= "secre"
+  scope= "scioe"
+  pkce= false
+ 
+  [body.json]
+  content= """
+     {
+       "name": "emee"
+     }
+  """
+ 
+  [body.xml]
+  content= """
+    <user>
+        <name>emee</name>
+    </user>
+  """
+ 
+  [body.text]
+  content= """
+    name: emee
+  """
+ 
+  [body.multipart-form]
+  content= """
+    {
+       "avatar"= '@file(C:\\\\Users\\\\DELL\\\\Pictures\\\\A.png)'
+       "username"= "emee"
+    }
+  """
+ 
+  [body.form-urlencoded]
+  username= "emee"
+ 
+  [script.before-request]
+  content= """
+       console.log(res.body.name);
+  """
+ 
+  [script.after-response]
+  content= """
+       console.log(res.body.name);
+  """
+ 
+  [docs]
+  content= """
+       Hello this is a sample documentation preview page..
+       **Bold** text for a markdown documentation page
+   """
+ 
+

@@ -1,0 +1,7 @@
+{
+	"name": "backend",
+	"description": "Tauri Rust powered UI framework for desktop apps.",
+	"scripts": {
+		"format": "cargo fmt"
+	}
+}

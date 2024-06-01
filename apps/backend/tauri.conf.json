@@ -1,0 +1,170 @@
+{
+	"build": {
+		"beforeDevCommand": "turbo run vite:dev --filter frontend",
+		"beforeBuildCommand": "turbo run vite:build --filter frontend --force",
+		"devPath": "http://localhost:1420",
+		"distDir": "../frontend/dist"
+	},
+	"package": {
+		"productName": "aspen-windows",
+		"version": "0.0.0"
+	},
+	"tauri": {
+		"allowlist": {
+			"all": false,
+			"app": {
+				"all": false,
+				"hide": false,
+				"show": false
+			},
+			"clipboard": {
+				"all": false,
+				"readText": false,
+				"writeText": false
+			},
+			"dialog": {
+				"all": false,
+				"ask": false,
+				"confirm": false,
+				"message": false,
+				"open": false,
+				"save": false
+			},
+			"fs": {
+				"all": false,
+				"copyFile": false,
+				"createDir": false,
+				"exists": false,
+				"readDir": false,
+				"readFile": false,
+				"removeDir": false,
+				"removeFile": false,
+				"renameFile": false,
+				"scope": [],
+				"writeFile": false
+			},
+			"globalShortcut": {
+				"all": false
+			},
+			"http": {
+				"all": true,
+				"request": true,
+				"scope": ["https://**/*", "http://**/*"]
+			},
+			"notification": {
+				"all": false
+			},
+			"os": {
+				"all": false
+			},
+			"path": {
+				"all": false
+			},
+			"process": {
+				"all": false,
+				"exit": false,
+				"relaunch": false,
+				"relaunchDangerousAllowSymlinkMacos": false
+			},
+			"protocol": {
+				"all": false,
+				"asset": false,
+				"assetScope": []
+			},
+			"shell": {
+				"all": true,
+				"execute": true,
+				"open": false,
+				"sidecar": true,
+				"scope": [
+					{
+						"name": "binaries/app",
+						"sidecar": true
+					}
+				]
+			},
+			"window": {
+				"all": false,
+				"center": false,
+				"close": false,
+				"create": false,
+				"hide": false,
+				"maximize": false,
+				"minimize": false,
+				"print": false,
+				"requestUserAttention": false,
+				"setAlwaysOnTop": false,
+				"setClosable": false,
+				"setContentProtected": false,
+				"setCursorGrab": false,
+				"setCursorIcon": false,
+				"setCursorPosition": false,
+				"setCursorVisible": false,
+				"setDecorations": false,
+				"setFocus": false,
+				"setFullscreen": false,
+				"setIcon": false,
+				"setIgnoreCursorEvents": false,
+				"setMaxSize": false,
+				"setMaximizable": false,
+				"setMinSize": false,
+				"setMinimizable": false,
+				"setPosition": false,
+				"setResizable": false,
+				"setSize": false,
+				"setSkipTaskbar": false,
+				"setTitle": false,
+				"show": false,
+				"startDragging": false,
+				"unmaximize": false,
+				"unminimize": false
+			}
+		},
+		"windows": [
+			{
+				"title": "Aspen",
+				"minHeight": 600,
+				"minWidth": 690,
+				"width": 800,
+				"height": 600,
+				"fileDropEnabled": false
+			}
+		],
+		"bundle": {
+			"active": false,
+			"appimage": {
+				"bundleMediaFramework": false
+			},
+			"deb": {
+				"files": {}
+			},
+			"icon": [
+				"icons/32x32.png",
+				"icons/128x128.png",
+				"icons/128x128@2x.png",
+				"icons/icon.icns",
+				"icons/icon.ico"
+			],
+			"identifier": "com.aspen.app",
+			"macOS": {
+				"minimumSystemVersion": "10.13"
+			},
+			"targets": "all",
+			"windows": {
+				"allowDowngrades": true,
+				"certificateThumbprint": null,
+				"digestAlgorithm": null,
+				"nsis": null,
+				"timestampUrl": null,
+				"tsp": false,
+				"webviewFixedRuntimePath": null,
+				"webviewInstallMode": {
+					"silent": true,
+					"type": "downloadBootstrapper"
+				},
+				"wix": null
+			},
+			"externalBin": ["binaries/app"]
+		}
+	}
+}

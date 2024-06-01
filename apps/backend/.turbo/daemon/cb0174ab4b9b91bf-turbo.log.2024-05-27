@@ -1,0 +1,12 @@
+2024-05-27T00:39:41.360737Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T00:39:41.436325Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T00:40:50.358661Z  WARN daemon_server:listen_socket{pid_path=AbsoluteSystemPath("C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.pid") sock_path=AbsoluteSystemPath("C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.sock") running=true}: pidlock: stale pid file at "C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.pid"    
+2024-05-27T00:40:50.439206Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T00:40:50.517506Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T14:01:22.529235Z  WARN daemon_server:listen_socket{pid_path=AbsoluteSystemPath("C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.pid") sock_path=AbsoluteSystemPath("C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.sock") running=true}: pidlock: stale pid file at "C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.pid"    
+2024-05-27T14:01:22.638844Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T14:01:22.764539Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T18:26:55.077331Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T18:26:55.179359Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T20:46:25.096339Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-27T20:46:25.188717Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running

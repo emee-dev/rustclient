@@ -1,0 +1,17 @@
+2024-05-26T00:02:34.963022Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T00:02:35.040127Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T13:27:59.004812Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T13:27:59.113586Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T17:53:21.558982Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T17:53:21.638503Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:02:04.815186Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:02:04.892015Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:03:56.799419Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:03:56.875097Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:14:04.599356Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:14:04.677218Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:21:13.780093Z  WARN daemon_server:listen_socket{pid_path=AbsoluteSystemPath("C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.pid") sock_path=AbsoluteSystemPath("C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.sock") running=true}: pidlock: stale pid file at "C:\\Users\\DELL\\AppData\\Local\\Temp\\turbod\\cb0174ab4b9b91bf\\turbod.pid"    
+2024-05-26T18:21:13.858857Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T18:21:13.937533Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T22:59:42.834211Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-05-26T22:59:42.930400Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
